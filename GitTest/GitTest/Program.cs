@@ -23,15 +23,10 @@ namespace GitTest
             return largestNumber;
         }
         static bool InRange(int firstNumber, int secondNumber, int thirdNumber)
-        {
-            bool firstNumberIsWithinRange = false;
+        {;
             int[] numbers = { firstNumber, secondNumber, thirdNumber };
             int middleNumber = numbers.OrderByDescending(x => x).ToArray()[1];
-            if (middleNumber == firstNumber)
-            {
-                firstNumberIsWithinRange = true;
-            }
-            return firstNumberIsWithinRange;
+            return middleNumber == firstNumber;
         }
     }
 }
