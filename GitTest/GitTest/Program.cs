@@ -8,14 +8,21 @@ namespace GitTest
 {
     class Program
     {
+        static Random random = new Random();
         static void Main(string[] args)
         {
             Console.WriteLine("Insert number:");
             int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(IsPrimal(number));
+
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(D20());
+            }
+
         }
-        static bool IsPrimal(int number) {
-            bool isPrimal = true;
+        static bool IsPrimal(int number)
+        {
             if (number < 2)
             {
                 return false;
@@ -29,6 +36,10 @@ namespace GitTest
                 }
             }
             return true;
+        }
+        static int D20()
+        {
+            return random.Next(1, 20);
         }
     }
 }
