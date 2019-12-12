@@ -16,11 +16,10 @@ namespace GitTest
         }
         static bool IsPrimal(int number) {
             bool isPrimal = true;
-            /*
             if (number < 2)
             {
                 return false;
-            }*/
+            }
 
             for (int i = 2; i < number; i++)
             {
