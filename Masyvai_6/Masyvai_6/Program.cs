@@ -14,8 +14,6 @@ namespace Masyvai_6
           //  DemoFunction("test", 12, false, "taip", 'n', 23);
             /*
             ArrayReferenceTest();
-            */
-            /*
             string[] myStrings = FiveStrings();
             Console.WriteLine(String.Join(String.Empty, myStrings)); //atspausdinti be tarpu
 
