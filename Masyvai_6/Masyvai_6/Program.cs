@@ -15,29 +15,48 @@ namespace Masyvai_6
 
             string[,] minesweeperTable = PopulateMineField(rowsArray, colCount);
             PrintOutTheTable(minesweeperTable);
+            minesweeperTable= MinesMapArray(minesweeperTable, rowsArray.Length, colCount);
+            PrintOutTheTable(minesweeperTable);
         }
-        static string CountMines()
+        static string[,] MinesMapArray(string[,] minesweeperTable, int rowsCount,int colCount)
         {
-
-        }
-        static string[,] MinesMapArray(string[,] minesweeperTable, int colCount, int rowsCount)
-        {
-            string[,] minesMapArray = new string[rowsCount,colCount];
+            int lowerRow = 0;
+            int upperRow = 0;
+            int leftMostCol = 0;
+            int rightMostCol = 0;
+            int minesCount = 0;
+            string[,] resultArray = new string[rowsCount, colCount];
             for (int i = 0; i < rowsCount; i++)
             {
+                lowerRow = i - 1 <= 0 ? 0 : i - 1;
+                upperRow = i + 1 >= rowsCount ? rowsCount-1: i +1;
                 for (int j = 0; j < colCount; j++)
                 {
-                    if (minesweeperTable[i,j] == "*")
+                    leftMostCol = j - 1 <= 0 ? 0 : j - 1;
+                    rightMostCol = j + 1 >= colCount ? colCount-1: j+1;
+
+                    if (minesweeperTable[i, j] == "*")
                     {
-                        minesMapArray[i, j] = "#";
+                        resultArray[i, j] = "#";
                     }
                     else
                     {
-                        
+                        minesCount = 0;
+                        for (int x = lowerRow; x <= upperRow; x++)
+                        {
+                            for (int y = leftMostCol; y <= rightMostCol; y++)
+                            {
+                                if (minesweeperTable[x,y] == "*")
+                                {
+                                    minesCount++;
+                                }
+                            }
+                        }
+                        resultArray[i, j] = minesCount.ToString();
                     }
                 }
-
             }
+            return resultArray;
         }
         static void PrintOutTheTable(string[,] minesweeperTable)
         {
@@ -115,4 +134,3 @@ namespace Masyvai_6
         }
     }
 }
-
