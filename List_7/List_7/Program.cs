@@ -11,7 +11,7 @@ namespace List_7
         static void Main(string[] args)
         {
             #region Užduotis
-            //*
+            /*
             string wordToFind = "laboratorijoje";
             string textBlock = @"Virtualios realybės laboratorijoje dr. Tomas Blažauskas (KTU Informatikos fakulteto dėstytojas) padėjo pasitikrinti savo žinias apie virtualiąją realybę – vienu iš šiuo metu plačiausiai vystomu technologiniu objektu, sužinoti, kaip kuriamos simuliacijos ir išbandyti KTU studentų kuriamus VR projektus.
  Dalyvavo ekskursijoje po „Teltoniką“ (inovatyvią ir jaunatvišką įmonę, užsiimančią daiktų interneto sprendimais). Apsilankė potencialioje darbovietėje, kur susipažino su ten dirbančiomis moterimis, sužinojo, kokias užduotis jos atlieka darbo vietoje ir kokių įgūdžių joms reikia norint dirbti IT sferoje.";
@@ -19,12 +19,23 @@ namespace List_7
             List<string> listOfWords = textBlock.Split(' ').ToList();
             int longestWordLength = listOfWords.OrderByDescending(x => x.Length).First().Length;
             Console.WriteLine(longestWordLength);
-            Console.WriteLine(string.Join(Environment.NewLine,listOfWords.Where(x => x.Length == longestWordLength)));
+            Console.WriteLine(string.Join(Environment.NewLine, listOfWords.Where(x => x.Length == longestWordLength)));
             Console.WriteLine($"List contains {listOfWords.Count} words.");
             Console.WriteLine($"It is {listOfWords.Exists(x => x == "laboratorijoje")} that list contains word '{wordToFind}'.");
             List<string> shuffledList = listOfWords.OrderBy(x => Guid.NewGuid()).ToList();
+            Console.WriteLine();
+            Random rnd = new Random();
+            for (int i = rnd.Next(3, 12); i < shuffledList.Count; i = i + rnd.Next(3,12))
+            {
+                shuffledList[i] = shuffledList[i] + ".";
+            }
+            if (!shuffledList.Last().EndsWith("."))
+            {
+                shuffledList.Add(".");
+            }
             shuffledList.ForEach(PrintAllStrings);
             Console.WriteLine();
+
             //*/
             #endregion
             #region pasikartojimas
