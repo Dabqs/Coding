@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Basketball\Ball.cs" />
+    <Compile Include="Basketball\Basket.cs" />
+    <Compile Include="Basketball\Floor.cs" />
+    <Compile Include="Basketball\Player.cs" />
+    <Compile Include="Basketball\Referee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
