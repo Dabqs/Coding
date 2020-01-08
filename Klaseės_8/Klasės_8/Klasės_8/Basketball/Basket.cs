@@ -12,15 +12,22 @@ namespace Klasės_8.Uzduotis
         public string rimType;
         public string netType;
 
-        void ChangeRim()
+        public Basket(double height, string rim, string net)
+        {
+            this.height = height;
+            rimType = rim;
+            netType = net;
+        }
+
+        public void ChangeRim()
         {
 
         }
-        void AdjustHeight()
+        public void AdjustHeight()
         {
 
         }
-        void ChangeNet()
+        public void ChangeNet()
         {
 
         }

@@ -12,6 +12,10 @@ namespace Klasės_8.Uzduotis
         private decimal salary;
         public string role;
 
+        public Referee(string role)
+        {
+
+        }
         void SetSalaryByRank()
         {
 

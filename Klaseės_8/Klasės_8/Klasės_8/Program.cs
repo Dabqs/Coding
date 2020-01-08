@@ -10,6 +10,7 @@ namespace Klasės_8
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }

@@ -12,6 +12,12 @@ namespace Klasės_8.Uzduotis
         public string position;
         private double weight;
 
+        public Player(string name, string position, double weight)
+        {
+            this.name = name;
+            this.position = position;
+            this.weight = weight;
+        }
         public void Substitute()
         {
 

@@ -10,8 +10,16 @@ namespace Klasės_8.Uzduotis
     {
         private string material;
         public string linesColor;
-        private double threePointLineDistance;
+        public double threePointLineDistance;
 
+        public Floor(double threePointLineDistance)
+        {
+            material = "wood";
+            linesColor = "white";
+            this.threePointLineDistance = threePointLineDistance;
+
+
+        }
        private void ChangeMaterial()
         {
 
@@ -20,7 +28,7 @@ namespace Klasės_8.Uzduotis
         {
 
         }
-        private void AdjustThreePointLine()
+        public void AdjustThreePointLine()
         {
 
         }

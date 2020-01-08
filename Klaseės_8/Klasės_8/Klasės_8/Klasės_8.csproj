@@ -50,6 +50,7 @@
     <Compile Include="Basketball\Floor.cs" />
     <Compile Include="Basketball\Player.cs" />
     <Compile Include="Basketball\Referee.cs" />
+    <Compile Include="Test\HammerTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
