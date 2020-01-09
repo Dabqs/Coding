@@ -11,10 +11,27 @@ namespace Klasės_8.Test
         private double Length;
         private int hitCount;
 
-        public HammerTime(double Lenght)
+        public HammerTime(double Length)
         {
             this.Length = Length;
             hitCount = 0;
         }
+        public void HitNail()
+        {
+            hitCount++;
+        }
+        public int GetHitCount()
+        {
+            return hitCount;
+        }
+        public void SetLenght(int length)
+        {
+            Length = length;
+        }
+        public double GetLenght()
+        {
+            return Length;
+        }
+
     }
 }

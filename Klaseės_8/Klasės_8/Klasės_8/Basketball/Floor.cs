@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Klasės_8.Uzduotis
+namespace Klasės_8.Basketball
 {
     class Floor
     {
