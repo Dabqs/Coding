@@ -29,5 +29,9 @@ namespace GameProject.Game
         {
             Console.WriteLine($"Enemy's {name} (id: {id}) coordinates are [{x};{y}].");
         }
+        public int GetId()
+        {
+            return id;
+        }
     }
 }

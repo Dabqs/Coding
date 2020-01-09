@@ -13,27 +13,15 @@ namespace GameProject
         {
             Random rnd = new Random();
             GameScreen myGame = new GameScreen(10, 20);
-            Hero mainHero = new Hero("Mantas",0,0);
-            myGame.SetHero(mainHero);
-            int enemyCount = 0;
+            myGame.SetHero(new Hero("Mantas", 0, 0));
 
-            List<Enemy> enemies = new List<Enemy>();
+            int enemyCount = 0;
             for (int i = 0; i < 10; i++)
             {
-                enemies.Add(new Enemy(enemyCount, rnd.Next(0, 10), rnd.Next(0, 10), "enemy" + enemyCount));
+                myGame.AddEnemy(new Enemy(enemyCount, rnd.Next(0, 10), rnd.Next(0, 10), "enemy" + enemyCount));
                 enemyCount++;
             }
-
-
-            foreach (Enemy enemy in enemies)
-            {
-                myGame.AddEnemy(enemy);
-            }
-
-            foreach (Enemy enemy in enemies)
-            {
-                enemy.PrintInfo();
-            }
+            myGame.Render();
 
         }
     }

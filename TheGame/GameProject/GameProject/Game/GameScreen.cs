@@ -13,12 +13,10 @@ namespace GameProject.Game
         Hero hero;
         List<Enemy> enemies = new List<Enemy>();
 
-        public GameScreen(int width, int height, Hero hero, Enemy enemy)
+        public GameScreen(int width, int height)
         {
             this.width = width;
             this.height = height;
-            SetHero(hero);
-            AddEnemy(enemy);
         }
 
         public void SetHero(Hero hero)
@@ -36,6 +34,27 @@ namespace GameProject.Game
         public void AddEnemy(Enemy enemy)
         {
             enemies.Add(enemy);
+        }
+        public void MoveAllEnemiesDown()
+        {
+            foreach (Enemy theEnemy in enemies)
+            {
+                theEnemy.MoveDown();
+            }
+        }
+
+        public Enemy GetEnemyById(int id)
+        {
+            return enemies.Where(x => x.GetId() == id).FirstOrDefault();
+        }
+        public void Render()
+        {
+            hero.PrintInfo();
+            Console.WriteLine();
+            foreach (Enemy theEnemy in enemies)
+            {
+                theEnemy.PrintInfo();
+            }
         }
 
     }
