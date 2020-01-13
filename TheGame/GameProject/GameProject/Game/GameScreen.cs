@@ -45,7 +45,14 @@ namespace GameProject.Game
 
         public Enemy GetEnemyById(int id)
         {
-            return enemies.Where(x => x.GetId() == id).FirstOrDefault();
+            foreach (Enemy enemy in enemies)
+            {
+                if (enemy.GetId() == id)
+                {
+                    return enemy;
+                }
+            }
+            return null;
         }
         public void Render()
         {

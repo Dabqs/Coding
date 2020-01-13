@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace GameProject.Game
 {
-    class Hero
+    class Hero : Unit
     {
-        int x;
-        int y;
-        string name;
 
-        public Hero(string name, int x, int y)
+
+        public Hero(string name, int x, int y) : base(name, x, y)
         {
-            this.x = x;
-            this.y = y;
-            this.name = name;
         }
 
         public void MoveRight()
@@ -26,10 +21,6 @@ namespace GameProject.Game
         public void MoveLeft()
         {
             x--;
-        }
-        public void PrintInfo()
-        {
-            Console.WriteLine($"Hero's {name} coordinates are [{x};{y}]");
         }
     }
 }

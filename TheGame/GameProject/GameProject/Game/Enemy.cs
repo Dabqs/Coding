@@ -6,28 +6,18 @@ using System.Threading.Tasks;
 
 namespace GameProject.Game
 {
-    class Enemy
+    class Enemy : Unit
     {
-        int x;
-        int y;
         int id;
-        string name;
 
-        public Enemy(int id, int x, int y, string name)
+        public Enemy(int id, int x, int y, string name) : base(name, x, y)
         {
-            this.x = x;
-            this.y = y;
             this.id = id;
-            this.name = name;
         }
 
         public void MoveDown()
         {
-            y--;
-        }
-        public void PrintInfo()
-        {
-            Console.WriteLine($"Enemy's {name} (id: {id}) coordinates are [{x};{y}].");
+            y++;
         }
         public int GetId()
         {
