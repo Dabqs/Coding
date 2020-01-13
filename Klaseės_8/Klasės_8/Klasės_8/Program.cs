@@ -12,7 +12,42 @@ namespace Klasės_8
     {
         static void Main(string[] args)
         {
-            //*
+            Animal animal = new Animal("black","Hawk",16);
+            Console.WriteLine(animal.name);
+            Console.WriteLine(animal.GetAnimalAge());
+            Console.WriteLine(animal.GetAnimalColor());
+            animal.PrintAnimal(); 
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Bird balandis = new Bird(true, false, 600, "gray", "Skvernelis", 10);
+            Console.WriteLine(balandis.featherCount);
+            Console.WriteLine(balandis.name);
+            Console.WriteLine(balandis.GetAnimalColor());
+            Console.WriteLine(balandis.GetAnimalAge());
+            Console.WriteLine(balandis.ShowIfCanFly());
+            Console.WriteLine(balandis.ShowIfCanSwim());
+
+            balandis.PrintBird();
+
+
+
+            /*
+             * 
+            Person person = new Person("Mantas", 30d);
+            person.ChangeName("Saulius");
+            person.IntroduceYourself();
+
+            Student student = new Student("Ausrine",22,"Antakalnio 98");
+            student.IntroduceYourself();
+            student.ChangeStudentScholarshipStatus(true);
+            student.IntroduceYourself();
+
+            ChiefStudent chiefStudent = new ChiefStudent("Boss", 25);
+            chiefStudent.IntroduceYourself();
+            //*/
+            /*
             Console.WriteLine("Pasirinkite kamuolio spalvą: ");
             string ballColor = Console.ReadLine();
 

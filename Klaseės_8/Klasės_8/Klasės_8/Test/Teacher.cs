@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Klasės_8.Test
 {
-    class Hero : Unit
+    class Teacher
     {
-        public Hero() : base(int x, int y, string name)
-        {
-
-        }
     }
 }

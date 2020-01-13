@@ -50,9 +50,13 @@
     <Compile Include="Basketball\Floor.cs" />
     <Compile Include="Basketball\Player.cs" />
     <Compile Include="Basketball\Referee.cs" />
-    <Compile Include="Test\Enemy.cs" />
+    <Compile Include="Test\Animal.cs" />
+    <Compile Include="Test\Bird.cs" />
+    <Compile Include="Test\ChiefStudent.cs" />
     <Compile Include="Test\HammerTime.cs" />
-    <Compile Include="Test\Hero.cs" />
+    <Compile Include="Test\Person.cs" />
+    <Compile Include="Test\Student.cs" />
+    <Compile Include="Test\Teacher.cs" />
     <Compile Include="Test\Unit.cs" />
   </ItemGroup>
   <ItemGroup>
