@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameProject.Game
+namespace GameProject.Units
 {
     class Enemy : Unit
     {
@@ -14,7 +14,7 @@ namespace GameProject.Game
         {
             this.id = id;
         }
-
+        
         public void MoveDown()
         {
             y++;
