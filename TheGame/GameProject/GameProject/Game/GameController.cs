@@ -53,5 +53,13 @@ namespace GameProject.Game
 
             } while (needToRender);
         }
+        public void StartGameLoop()
+        {
+
+        }
+        public void InitGame()
+        {
+             
+        }
     }
 }
