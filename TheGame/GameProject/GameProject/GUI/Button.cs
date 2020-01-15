@@ -19,7 +19,7 @@ namespace GameProject.GUI
             notActiveFrame = new Frame(x , y, width, height, '+');
             textLine = new TextLine(x + 1, ((height - 2) / 2) + 1 + y, width, buttonCaption);
         }
-        public void Render()
+        public override void Render()
         {
             if (isActive)
             {

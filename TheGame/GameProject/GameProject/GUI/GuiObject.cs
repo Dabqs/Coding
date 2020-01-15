@@ -21,5 +21,10 @@ namespace GameProject.GUI
             this.height = height;
         }
 
+        public virtual void Render()
+        {
+
+        }
+
     }
 }

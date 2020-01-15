@@ -17,7 +17,7 @@ namespace GameProject.GUI
         {
 
         }
-        public void Render()
+        public override void Render()
         {
 
         }

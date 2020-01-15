@@ -23,7 +23,7 @@ namespace GameProject.GUI
             return y;
         }
 
-        public void Render() 
+        public override void Render() 
         {
 
             for (int i = 0; i < height; i++)

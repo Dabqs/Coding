@@ -13,7 +13,7 @@ namespace GameProject.GUI
         {
             border = new Frame(x, y, width, height, frameCharacter);
         }
-        public void Render()
+        public override void Render()
         {
             border.Render();
         }
