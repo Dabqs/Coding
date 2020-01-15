@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameProject.GUI
 {
-    class GuiObject
+    abstract class GuiObject
     {
         protected int height;
         protected int width;
@@ -21,10 +21,7 @@ namespace GameProject.GUI
             this.height = height;
         }
 
-        public virtual void Render()
-        {
-
-        }
+        public abstract void Render();
 
     }
 }
