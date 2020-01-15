@@ -10,5 +10,13 @@ namespace GameProject.GUI
     {
         private Button backButton;
         private TextBlock creditTextBlock;
+        public CreditWindow(int x, int y, int height, char frameCharacter) :base(x, y,height, 1, frameCharacter)
+        {
+
+        }
+        public void Render()
+        {
+
+        }
     }
 }

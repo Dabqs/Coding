@@ -9,13 +9,13 @@ namespace GameProject.GUI
     class Window : GuiObject
     {
         private Frame border;
-        public Window(int x, int y, int width, int height): base(x, y, width, height)
+        public Window(int x, int y, int width, int height, char frameCharacter): base(x, y, width, height)
         {
-
+            border = new Frame(x, y, width, height, frameCharacter);
         }
         public void Render()
         {
-
+            border.Render();
         }
     }
 }

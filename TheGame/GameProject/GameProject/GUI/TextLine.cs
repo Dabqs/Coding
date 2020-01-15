@@ -10,13 +10,14 @@ namespace GameProject.GUI
     {
         private readonly string data;
 
-        public TextLine(int x, int y, int width) : base(x, y, width,1)
+        public TextLine(int x, int y, int width, string data) : base(x, y, width,1)
         {
-
+            this.data = data;
         }
         public void Render()
         {
-
+            Console.SetCursorPosition(x, y);
+            Console.Write(data);
         }
     }
 }

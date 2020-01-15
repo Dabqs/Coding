@@ -1,4 +1,5 @@
 ﻿using GameProject.Game;
+using GameProject.GUI;
 using GameProject.Units;
 using System;
 using System.Collections.Generic;
@@ -12,8 +13,18 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
+            /*
             GameController myGame = new GameController();
             myGame.StartGame();
+            //*/
+            //*
+            Frame frame = new Frame(10, 10, 30, 20, '@');
+            frame.Render();
+            TextLine textLine = new TextLine(12, 12, 28, "Laba diena su vistiena");
+            textLine.Render();
+            Button startButton = new Button(4, 4, 7, 7, "Start");
+            startButton.Render();
+            //*/
         }
 
     }

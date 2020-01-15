@@ -9,24 +9,21 @@ namespace GameProject.Game
 {
     class GameController
     {
+        private GameScreen myGame;
         public GameController()
         {
 
         }
         public void StartGame()
         {
+            InitGame();
+            StartGameLoop();
+
+            
+        }
+        public void StartGameLoop()
+        {
             bool needToRender = true;
-            Random rnd = new Random();
-            GameScreen myGame = new GameScreen(10, 20);
-            myGame.SetHero(new Hero("Mantas", 0, 0));
-
-            int enemyCount = 0;
-            for (int i = 0; i < 10; i++)
-            {
-                myGame.AddEnemy(new Enemy(enemyCount, rnd.Next(0, 10), rnd.Next(0, 10), "enemy" + enemyCount));
-                enemyCount++;
-            }
-
             do
             {
                 Console.Clear();
@@ -53,13 +50,18 @@ namespace GameProject.Game
 
             } while (needToRender);
         }
-        public void StartGameLoop()
-        {
-
-        }
         public void InitGame()
         {
-             
+            Random rnd = new Random();
+            myGame = new GameScreen(10, 20);
+            myGame.SetHero(new Hero("Mantas", 0, 0));
+
+            int enemyCount = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                myGame.AddEnemy(new Enemy(enemyCount, rnd.Next(0, 10), rnd.Next(0, 10), "enemy" + enemyCount));
+                enemyCount++;
+            }
         }
     }
 }

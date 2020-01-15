@@ -25,11 +25,17 @@ namespace GameProject.Units
         }
         public void MoveHeroRight()
         {
-            hero.MoveRight();
+            if (hero.GetX() < width)
+            {
+                hero.MoveRight();
+            }
         }
         public void MoveHeroLeft()
         {
-            hero.MoveLeft();
+            if (hero.GetX() > 0)
+            {
+                hero.MoveLeft();
+            }
         }
         public void AddEnemy(Enemy enemy)
         {

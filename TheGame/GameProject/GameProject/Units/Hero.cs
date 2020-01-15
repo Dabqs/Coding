@@ -22,5 +22,9 @@ namespace GameProject.Units
         {
             x--;
         }
+        public int GetX()
+        {
+            return x;
+        }
     }
 }

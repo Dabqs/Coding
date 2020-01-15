@@ -47,6 +47,7 @@
     <Compile Include="GUI\Button.cs" />
     <Compile Include="GUI\CreditWindow.cs" />
     <Compile Include="GUI\Frame.cs" />
+    <Compile Include="GUI\Gamewindow.cs" />
     <Compile Include="GUI\GuiObject.cs" />
     <Compile Include="GUI\TextBlock.cs" />
     <Compile Include="GUI\TextLine.cs" />
