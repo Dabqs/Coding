@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionOverride.Zoo
 {
-    class Animal
+    class Animal : LivingObject
     {
         protected string name = "Animal";
         public virtual void Move()
@@ -14,6 +14,10 @@ namespace FunctionOverride.Zoo
             Console.WriteLine( name + " moves. Using x, y");
         }
         public void Breath()
+        {
+
+        }
+        public override void Live()
         {
 
         }

@@ -22,7 +22,7 @@ namespace FunctionOverride
             //*
 animal.Move();
 bird.Move();
-
+            
 birdAsAnimal.Move();
 //*/
             Console.WriteLine("All animals moves---------------");

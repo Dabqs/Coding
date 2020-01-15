@@ -48,6 +48,7 @@
     <Compile Include="Zoo\Animal.cs" />
     <Compile Include="Zoo\Bird.cs" />
     <Compile Include="Zoo\Horse.cs" />
+    <Compile Include="Zoo\LivingObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
