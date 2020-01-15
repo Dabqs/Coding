@@ -17,17 +17,33 @@ namespace GameProject.GUI
 
         public void Render() 
         {
-            //print upper horizontal border
-            SkipVertical(y);
-            SkipHorizontal(x);
-            PrintHorizontalBorder();
 
-            //print side borders
-            PrintVerticalBorders();
+            for (int i = 0; i < height; i++)
+            {
+                Console.SetCursorPosition(x-1 , y -1 +i);
+                if (i == 0 || i == (height -1)) //prints top and bottom border
+                {
+                    for (int j = 0; j < width; j++)
+                    {
+                        Console.Write(renderChar);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < width; j++)
+                    {
+                        if (j == 0 || j== width -1)
+                        {
 
-            //print upper horizontal border
-            SkipHorizontal(x);
-            PrintHorizontalBorder();
+                            Console.Write(renderChar);
+                        }
+                        else
+                        {
+                            Console.Write(" ");
+                        }
+                    }
+                }
+            }
         }
         #region Helper functions
         private void PrintVerticalBorders()

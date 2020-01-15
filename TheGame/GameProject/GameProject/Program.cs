@@ -18,12 +18,14 @@ namespace GameProject
             myGame.StartGame();
             //*/
             //*
-            Frame frame = new Frame(10, 10, 30, 20, '@');
+            Frame frame = new Frame(10, 10, 10, 10, '@');
             frame.Render();
+            /*
             TextLine textLine = new TextLine(12, 12, 28, "Laba diena su vistiena");
             textLine.Render();
             Button startButton = new Button(4, 4, 7, 7, "Start");
             startButton.Render();
+            //*/
             //*/
         }
 
