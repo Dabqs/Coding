@@ -20,6 +20,6 @@ namespace GameProject.GUI
             this.width = width;
             this.height = height;
         }
-        
+
     }
 }

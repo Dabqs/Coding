@@ -15,8 +15,8 @@ namespace GameProject.GUI
 
         public Button(int x, int y, int width, int height, string buttonCaption) : base(x, y, width, height)
         {
-            activeFrame = new Frame(x, y, width, height, '#');
-            notActiveFrame = new Frame(x, y, width, height, '+');
+            activeFrame = new Frame(x , y , width, height, '#');
+            notActiveFrame = new Frame(x , y, width, height, '+');
             textLine = new TextLine(x + 1, ((height - 2) / 2) + 1 + y, width, buttonCaption);
         }
         public void Render()
@@ -24,10 +24,12 @@ namespace GameProject.GUI
             if (isActive)
             {
                 activeFrame.Render();
+                textLine.Render();
             }
             else
             {
                 notActiveFrame.Render();
+                textLine.Render();
             }
         }
         public void SetActive()

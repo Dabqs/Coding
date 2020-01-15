@@ -14,6 +14,14 @@ namespace GameProject.GUI
         {
             renderChar = frameCharacter;
         }
+        public int GetX()
+        {
+            return x;
+        }
+        public int GetY()
+        {
+            return y;
+        }
 
         public void Render() 
         {
@@ -21,20 +29,19 @@ namespace GameProject.GUI
             for (int i = 0; i < height; i++)
             {
                 Console.SetCursorPosition(x-1 , y -1 +i);
-                if (i == 0 || i == (height -1)) //prints top and bottom border
-                {
+                if (i == 0 || i == (height -1))
+                { //prints top and bottom border
                     for (int j = 0; j < width; j++)
                     {
                         Console.Write(renderChar);
                     }
                 }
                 else
-                {
+                { //prints top and bottom border
                     for (int j = 0; j < width; j++)
                     {
                         if (j == 0 || j== width -1)
                         {
-
                             Console.Write(renderChar);
                         }
                         else
