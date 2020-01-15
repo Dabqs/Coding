@@ -15,7 +15,6 @@ namespace Properties_11
             Person person = new Person();
             Console.WriteLine(person.Name);
             Console.WriteLine(person.SurName);
-          
             // neveikia, nes nebera GET propertyje Console.WriteLine(person.Nationality); 
             Console.WriteLine(person.Religion);
             person.Name = "Mantas";
@@ -27,8 +26,6 @@ namespace Properties_11
             Console.WriteLine(person.SurName);
             // neveikia, nes nebera GET propertyje Console.WriteLine(person.Nationality);
             Console.WriteLine(person.Religion);
-
-
         }
 
     }
