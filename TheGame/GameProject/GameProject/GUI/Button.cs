@@ -17,20 +17,20 @@ namespace GameProject.GUI
         {
             activeFrame = new Frame(x , y , width, height, '#');
             notActiveFrame = new Frame(x , y, width, height, '+');
-            textLine = new TextLine(x + 1, ((height - 2) / 2) + 1 + y, width, buttonCaption);
+            textLine = new TextLine(x + 1, ((height - 2) / 2) + 1 + y, width -2, buttonCaption);
         }
         public void Render()
         {
             if (isActive)
             {
                 activeFrame.Render();
-                textLine.Render();
             }
             else
             {
                 notActiveFrame.Render();
-                textLine.Render();
             }
+            textLine.Render();
+
         }
         public void SetActive()
         {
