@@ -8,17 +8,17 @@ namespace GameProject.GUI
 {
     abstract class GuiObject
     {
-        protected int height;
-        protected int width;
-        protected int x;
-        protected int y;
+        protected int Height { get; set; }
+        protected int Width { get; set; }
+        protected int X { get; set; }
+        protected int Y { get; set; }
 
         public GuiObject(int x, int y, int width, int height)
         {
-            this.x = x;
-            this.y = y;
-            this.width = width;
-            this.height = height;
+            X = x;
+            Y = y;
+            Width = width;
+            Height = height;
         }
 
         public abstract void Render();

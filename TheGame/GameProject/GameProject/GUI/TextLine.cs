@@ -16,7 +16,7 @@ namespace GameProject.GUI
         }
         public override void Render()
         {
-            Console.SetCursorPosition(x, y);
+            Console.SetCursorPosition(X, Y);
             Console.Write(data);
         }
     }

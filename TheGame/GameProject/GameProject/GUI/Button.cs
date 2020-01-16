@@ -9,7 +9,7 @@ namespace GameProject.GUI
     class Button : GuiObject
     {
         private Frame activeFrame;
-        private bool isActive = false;
+        public bool IsActive { get; set; } = false;
         private Frame notActiveFrame;
         private TextLine textLine;
 
@@ -21,7 +21,7 @@ namespace GameProject.GUI
         }
         public override void Render()
         {
-            if (isActive)
+            if (IsActive)
             {
                 activeFrame.Render();
                 textLine.Render();
@@ -31,10 +31,6 @@ namespace GameProject.GUI
                 notActiveFrame.Render();
                 textLine.Render();
             }
-        }
-        public void SetActive()
-        {
-            isActive = true;
         }
     }
 }
