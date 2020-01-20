@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\Dog.cs" />
+    <Compile Include="Examples\Ghost.cs" />
+    <Compile Include="Examples\IGlows.cs" />
+    <Compile Include="Examples\Hero.cs" />
+    <Compile Include="Examples\IMoveable.cs" />
+    <Compile Include="Examples\IPrintable.cs" />
+    <Compile Include="Examples\IRendetable.cs" />
+    <Compile Include="Examples\ISpeaks.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Examples\House.cs" />
+    <Compile Include="Examples\Sun.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
