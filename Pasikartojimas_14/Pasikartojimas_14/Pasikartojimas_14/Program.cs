@@ -24,7 +24,6 @@ namespace Pasikartojimas_14
             company.AddClient(new Client("OpusCapita"));
 
             company.PrintInfo();
-
             Console.ReadLine();
 
         }

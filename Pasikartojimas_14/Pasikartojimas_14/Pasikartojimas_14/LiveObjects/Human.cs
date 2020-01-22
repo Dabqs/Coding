@@ -12,12 +12,12 @@ namespace Pasikartojimas_14.LiveObjects
 
         public override string GetRace()
         {
-            return string.Empty;
+            return "Human";
         }
 
         public virtual void PrintInfo()
         {
-            Console.Write("Human " + Name);
+            Console.Write(GetRace()+ " " + Name);
         }
 
         public Human(string name)

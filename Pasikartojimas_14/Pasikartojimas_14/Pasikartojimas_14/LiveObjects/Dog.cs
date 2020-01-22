@@ -10,18 +10,18 @@ namespace Pasikartojimas_14.LiveObjects
     {
         private string name;
 
-        public Dog(string name)
+        public Dog(string name) :base()
         {
             this.name = name;
         }
         public override string GetRace()
         {
-            return "";
+            return "Dog";
         }
         public override void PrintInfo()
         {
             base.PrintInfo();
-            Console.WriteLine(" dog " + name);
+            Console.WriteLine(" " + this.GetRace() + " " + name);
         }
     }
 }

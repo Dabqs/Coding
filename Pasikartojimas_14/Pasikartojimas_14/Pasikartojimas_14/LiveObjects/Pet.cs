@@ -11,12 +11,12 @@ namespace Pasikartojimas_14.LiveObjects
 
         public override string GetRace()
         {
-            return string.Empty;
+            return "Pet";
         }
 
         public virtual void PrintInfo()
         {
-            Console.WriteLine("Pet");
+            Console.Write("Pet");
         }
     }
 }

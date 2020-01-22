@@ -18,6 +18,7 @@ namespace Pasikartojimas_14.Organization
         public void AddClient(Client client)
         {
             clientList.Add(client);
+            client.ClientId = clientList.Count()-1;
         }
         public Company(Human boss, string name)
         {
@@ -52,7 +53,14 @@ namespace Pasikartojimas_14.Organization
 
         public void PrintInfo()
         {
+            Console.Write("BOSS: ");
+            boss.PrintInfo();
             Console.WriteLine();
+            OfficePet.PrintInfo();
+            Console.WriteLine("Workers:");
+            PrintAllWorkers();
+            Console.WriteLine("Clients:");
+            PrintAllClients();
         }
     }
 }
