@@ -1,4 +1,5 @@
 ﻿using StaticOverload.Excercise;
+using StaticOverload.ExtraExercises;
 using StaticOverload.Interfaces;
 using StaticOverload.Utils;
 using System;
@@ -13,6 +14,16 @@ namespace StaticOverload
     {
         static void Main(string[] args)
         {
+            PrintHelper.Print("This is the main message", 'c', "stringa",8,7.50);
+            PrintHelper.PrintTable('f', 8, "this is message", 987.7);
+            foreach (var item in StringHelper.ExtractWords("laba diena, su vistiena"))
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(StringHelper.SplitCammelCase("ThisIsMyTest"));
+
+            #region paskaitosExamples
+            /*
             AllStatic.Show();
             AllStatic.MinNumber = 50;
             Console.WriteLine($"Min number is {AllStatic.MinNumber}");
@@ -27,8 +38,8 @@ namespace StaticOverload
             misri.ShowLineEnd();
 
             ActionCounter actionCounter = ActionCounter.GetInstance();
+            //*/
 
-            #region paskaitosExamples
             /*
             //Animal animal = new Animal();
             //animal.Move();

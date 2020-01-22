@@ -13,7 +13,7 @@ namespace StaticOverload.Excercise
 
         }
         public static void InitiateClass() {
-            ClassWithPrivateConstructor;
+           // ClassWithPrivateConstructor;
         }
     }
 }

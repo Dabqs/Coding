@@ -48,6 +48,9 @@
     <Compile Include="Excercise\ClassWithPrivateConstructor.cs" />
     <Compile Include="Excercise\MisriKlase.cs" />
     <Compile Include="Excercise\NonStaticAtAll.cs" />
+    <Compile Include="ExtraExercises\PrintHelper.cs" />
+    <Compile Include="ExtraExercises\StringHelper.cs" />
+    <Compile Include="ExtraExercises\VectorHelper.cs" />
     <Compile Include="Interfaces\Animal.cs" />
     <Compile Include="Interfaces\IMoveable.cs" />
     <Compile Include="Program.cs" />
