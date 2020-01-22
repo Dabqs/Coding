@@ -1,4 +1,5 @@
 ﻿using StaticOverload.Excercise;
+using StaticOverload.Overloading;
 using StaticOverload.ExtraExercises;
 using StaticOverload.Interfaces;
 using StaticOverload.Utils;
@@ -14,6 +15,39 @@ namespace StaticOverload
     {
         static void Main(string[] args)
         {
+            int? number = null;
+            double? nr = null;
+            bool? isItTrue = null;
+            char? key = null;
+            string str = null;
+
+
+            Car test = null;
+
+            if (test != null)
+            {
+                Console.WriteLine(test?.Manufacturer);
+            }
+            //test = new Car();
+            //if (test != null)
+            test?.DoStuff(); // klaustukas sako ar daiktas egzistuoja
+           // {
+           //     test.DoStuff();
+           // }
+
+            /* 
+             
+              Overloading.Animal animal = new Overloading.Animal(1,"Nobody",true);
+            animal.DetermineWhetherCanFly();
+              Car car = new Car();
+            Console.WriteLine(car);
+            Car car2 = new Car("Volvo", "Red", "Diesel power");
+            Car car3 = new Car(54987);
+            List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            int[] numbersArr = new int[] { 1, 2, 3, 4, 5 };
+
+            PrintUtil.Print(numbers, "My list of numbers");
+            PrintUtil.Print(numbersArr, "My array of numbers");
             PrintHelper.Print("This is the main message", 'c', "stringa",8,7.50);
             PrintHelper.PrintTable('f', 8, "this is message", 987.7);
             foreach (var item in StringHelper.ExtractWords("laba diena, su vistiena"))
@@ -21,7 +55,7 @@ namespace StaticOverload
                 Console.WriteLine(item);
             }
             Console.WriteLine(StringHelper.SplitCammelCase("ThisIsMyTest"));
-
+            //*/
             #region paskaitosExamples
             /*
             AllStatic.Show();
