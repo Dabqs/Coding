@@ -16,7 +16,8 @@ namespace Pasikartojimas_14.LiveObjects
 
         public virtual void PrintInfo()
         {
-            Console.Write("Pet");
+           // Console.Write("Pet");
+            Console.Write(this.GetRace());
         }
     }
 }
