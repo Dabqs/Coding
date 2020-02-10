@@ -1,12 +1,17 @@
-﻿<Window x:Class="FirstGuiApp.MainWindow"
+﻿<Window x:Name="MyWnd" x:Class="FirstGuiApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstGuiApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="My Super Window" Height="750" Width="1000" Background="#FFE0E0E0" BorderBrush="#FFE4A827">
+    <Grid MouseDown="HandleMyFirstButtonClick">
+        <Button Name ="myButton"  Content="Buttonas" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="21,72,0,0" Click="HandleMyFirstButtonClick"/>
+        <Label Name ="firstLbl" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="270,180,308,0" FontSize="36" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" BorderBrush="#FFD61717" Foreground="#FFBB0909" Height="157" Width="414">
+
+        </Label>
+        <TextBox x:Name="myTxtBox" HorizontalAlignment="Left" Height="104" Margin="157,275,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="277" TextChanged="myTxtBox_TextChanged"/>
+
     </Grid>
 </Window>
